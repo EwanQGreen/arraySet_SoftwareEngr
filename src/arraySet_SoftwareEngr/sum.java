@@ -17,6 +17,13 @@ public class sum {
 		}
 		return sum;
 	}
+	public static int[] array_reverse(int[] array) {
+		int[] reversedArray = new int[array.length];
+		for (int i = 0; i < array.length; ++i) {
+			reversedArray[i] = array[array.length - 1 - i]; 
+		}
+		return reversedArray;
+	}
 	public static void main(String[] args) {
 		System.out.println("Input Array Size:");
 		Scanner scnr = new Scanner(System.in);
@@ -29,6 +36,11 @@ public class sum {
 		}
 		System.out.println("Sum: " + array_sum(arr));
 		System.out.println("Product: " + array_product(arr));
+		System.out.print("Reverse:");
+		int[] reversed = array_reverse(arr);
+		for (int j = 0; j < arr.length; ++j) {
+			System.out.print(" " + reversed[j]);
+		}
 		
 		scnr.close();
 	}
