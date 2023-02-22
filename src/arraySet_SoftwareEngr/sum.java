@@ -17,6 +17,13 @@ public class sum {
 		}
 		return sum;
 	}
+	public static int[] array_reverse(int[] array) {
+		int[] reversedArray = new int[array.length];
+		for (int i = 0; i < array.length; ++i) {
+			reversedArray[i] = array[array.length - 1 - i]; 
+		}
+		return reversedArray;
+	}
 	public static void main(String[] args) {
 		System.out.println("Input Array Size:");
 		Scanner scnr = new Scanner(System.in);
