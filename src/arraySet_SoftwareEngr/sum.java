@@ -10,5 +10,12 @@ public class sum {
 		}
 		return sum;
 	}
+	public static int array_product(int[] array) {
+		int sum = 1;
+		for (int i = 0; i < array.length; ++i) {
+			sum *= array[i];
+		}
+		return sum;
+	}
 }
 
