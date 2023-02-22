@@ -36,6 +36,11 @@ public class sum {
 		}
 		System.out.println("Sum: " + array_sum(arr));
 		System.out.println("Product: " + array_product(arr));
+		System.out.print("Reverse:");
+		int[] reversed = array_reverse(arr);
+		for (int j = 0; j < arr.length; ++j) {
+			System.out.print(" " + reversed[j]);
+		}
 		
 		scnr.close();
 	}
